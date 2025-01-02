@@ -17,6 +17,12 @@ log.txt
 /.versions
 /coverage
 
+# Dependencies
+/node_modules
+/platforms
+/plugins
+/www
+
 # Ionic
 /.ionic
 /www

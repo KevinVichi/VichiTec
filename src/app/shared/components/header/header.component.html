@@ -1,0 +1,23 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary">
+    <!-- Botones a la izquierda -->
+    <ion-buttons slot="start">
+      <!-- Botón de menú lateral -->
+      <ion-menu-button *ngIf="showMenu"></ion-menu-button>
+
+      <!-- Botón de retroceso -->
+      <ion-back-button *ngIf="backButton" [defaultHref]="backButton"></ion-back-button>
+
+      <!-- Botón de cierre de modal -->
+      <ion-button (click)="dismissModal()" *ngIf="isModal">
+        <ion-icon name="close-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <!-- Título del header -->
+    <ion-title>
+      <strong>{{ title }}</strong>
+      <div class="admin">A D M I N</div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
